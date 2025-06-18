@@ -14,10 +14,13 @@ vim.keymap.set("n", "<leader>cr", vim.lsp.buf.references, {})
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
 
 
-vim.keymap.set("n", "<leader>gp", ':Gitsigns preview_hunk<CR>', { desc = "Git preview" })
+vim.keymap.set("n", "<leader>gp", ':Gitsigns preview_hunk<CR>', { desc = "Git preview hunk" })
 vim.keymap.set("n", "<leader>gt", ':Gitsigns toggle_current_line_blame<CR>', { desc = "Git line blame toggle" })
 vim.keymap.set("n", "<leader>gl", ':vertical Git log<CR>', { desc = "Show git logs" })
-vim.keymap.set("n", "<leader>ga", ':vertical Git add', { desc = "Git add files" })
+vim.keymap.set("n", "<leader>ga", ':vertical Git add ', { desc = "Git add files" })
 vim.keymap.set("n", "<leader>gc", ':vertical Git commit<CR>', { desc = "Git commit" })
+vim.keymap.set("n", "<leader>gup", 'Git push', { desc = "Git push to branch" })
+vim.keymap.set("n", "<leader>gua", 'Git remote add origin ', { desc = "Git add remote" })
+
 
 
