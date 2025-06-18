@@ -19,8 +19,6 @@ vim.keymap.set("n", "<leader>gt", ':Gitsigns toggle_current_line_blame<CR>', { d
 vim.keymap.set("n", "<leader>gl", ':vertical Git log<CR>', { desc = "Show git logs" })
 vim.keymap.set("n", "<leader>ga", ':vertical Git add ', { desc = "Git add files" })
 vim.keymap.set("n", "<leader>gc", ':vertical Git commit<CR>', { desc = "Git commit" })
-vim.keymap.set("n", "<leader>gup", 'Git push', { desc = "Git push to branch" })
-vim.keymap.set("n", "<leader>gua", 'Git remote add origin ', { desc = "Git add remote" })
-
-
+vim.keymap.set("n", "<leader>gup", ':Git push', { desc = "Git push to branch" })
+vim.keymap.set("n", "<leader>gua", ':Git remote add origin ', { desc = "Git add remote" })
 
