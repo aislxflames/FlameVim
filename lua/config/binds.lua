@@ -1,9 +1,6 @@
 -- Addkeymap namespaces using wich.nvim
-require("which-key").register({
-  ["<leader>c"] = { name = "Code" },
-  ["<leader>f"] = { name = "Ess / UI" },
-  ["<leader>g"] = { name = "Git" },
-})
+
+
 
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem toggle left<CR>', { desc = "Neotree" })
 
