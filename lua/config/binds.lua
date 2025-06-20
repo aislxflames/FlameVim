@@ -1,14 +1,13 @@
 -- Addkeymap namespaces using wich.nvim
 require("which-key").register({
-  ["<leader>g"] = { name = "+Git" },
-  ["<leader>c"] = { name = "+Code" },
-  ["<leader>f"] = { name = "+Ess / UI" },
+  ["<leader>c"] = { name = "Code" },
+  ["<leader>f"] = { name = "Ess / UI" },
+  ["<leader>g"] = { name = "Git" },
 })
 
+vim.keymap.set('n', '<leader>e', ':Neotree filesystem toggle left<CR>', { desc = "Neotree" })
 
-
-vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = "Neotree" })
-
+vim.keymap.set('n', '<leader>fe', ':Neotree filesystem toggle float<CR>', { desc = "Neotree Float" })
 vim.keymap.set('n', '<leader>ft', ':Themery<CR>', { desc = "Theme Switcher" })
 vim.keymap.set('n', '<leader>fm', ':Mason<CR>', { desc = "Mason menu" })
 vim.keymap.set('n', '<leader>fl', ':Lazy<CR>', { desc = "Lazy menu" })
@@ -30,4 +29,3 @@ vim.keymap.set("n", "<leader>ga", ':vertical Git add ', { desc = "Git: Add Files
 vim.keymap.set("n", "<leader>gc", ':vertical Git commit<CR>', { desc = "Git: Commit" })
 vim.keymap.set("n", "<leader>gup", ':Git push<CR>', { desc = "Git: Push to Remote" })
 vim.keymap.set("n", "<leader>gua", ':Git remote add origin ', { desc = "Git: Add Remote Origin" })
-
