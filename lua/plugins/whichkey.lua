@@ -10,17 +10,18 @@ return {
     wk.add({
       { "<leader>f",  group = "Ess / UI" },
       { "<leader>c",  group = "Code" },
-      { "<leader>g",  group = "Git" }
+      { "<leader>g",  group = "Git" },
+      { "<leader>t",  group = "Terminal" }
     })
   end,
 
   keys = {
     {
-      "<leader>f",
+      "<leader>?",
       function()
-        require("which-key").show({ global = true })
+        require("which-key").show({ global = false })
       end,
-      desc = "",
+      desc = "Show Binds",
     },
   },
 }
