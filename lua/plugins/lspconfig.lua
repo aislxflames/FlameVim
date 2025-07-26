@@ -13,7 +13,11 @@ return {
     dependencies = { "williamboman/mason.nvim" },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {},
+        ensure_installed = {
+          "cssls",
+          "ts_ls",
+          "tailwindcss",
+        },
         automatic_installation = true,
       })
     end,
@@ -41,4 +45,7 @@ return {
       })
     end
   },
+  {
+    "MunifTanjim/prettier.nvim"
+  }
 }

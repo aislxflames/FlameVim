@@ -4,14 +4,17 @@ return {
     lazy = false,
     config = function()
       require("themery").setup({
-        themes = { "gruvbox", "lushwal", "pywal16" },
+        themes = { "gruvbox", "lushwal", "pywal16", "catppuccin", "neopywal" },
         livePreview = true,
       })
     end
   },
+
   {
     "ellisonleao/gruvbox.nvim",
     'uZer/pywal16.nvim',
+    "RedsXDD/neopywal.nvim",
+    { "catppuccin/nvim", name = "catppuccin" },
   },
 
   {

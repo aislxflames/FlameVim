@@ -1,5 +1,9 @@
 -- Addkeymap namespaces using wich.nvim
 
+vim.keymap.set('n', '<leader>m', '<Plug>(VM-Find-Under)', { desc = "MultiCursor Start" })
+vim.keymap.set('x', '<leader>m', '<Plug>(VM-Find-Subword-Under)', { desc = "MultiCursor Start (Visual)" })
+
+
 
 
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem toggle left<CR>', { desc = "Neotree" })

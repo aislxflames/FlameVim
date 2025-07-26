@@ -7,10 +7,9 @@ return {
 
     configs.setup({
       auto_install = true,
-      sync_install = false,
+      sync_install = true,
       highlight = { enable = true },
       indent = { enable = true },
     })
   end
 }
-
