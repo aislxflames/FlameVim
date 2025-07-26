@@ -31,7 +31,7 @@ return {
       }
 
       -- Optional footer
-      dashboard.section.footer.val = { "🔥 Welcome to NeoVim, hacker." }
+      dashboard.section.footer.val = { "Made By Aislx Flames." }
 
       -- Layout adjustments
       dashboard.opts.opts.noautocmd = true

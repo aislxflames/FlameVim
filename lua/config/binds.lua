@@ -1,22 +1,20 @@
 -- Addkeymap namespaces using wich.nvim
-
-vim.keymap.set('n', '<leader>m', '<Plug>(VM-Find-Under)', { desc = "MultiCursor Start" })
-vim.keymap.set('x', '<leader>m', '<Plug>(VM-Find-Subword-Under)', { desc = "MultiCursor Start (Visual)" })
-
-
-
-
+     
+          
+         
+         
+         
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem toggle left<CR>', { desc = "Neotree" })
-
+        
 vim.keymap.set('n', '<leader>fe', ':Neotree filesystem toggle float<CR>', { desc = "Neotree Float" })
 vim.keymap.set('n', '<leader>ft', ':Themery<CR>', { desc = "Theme Switcher" })
 vim.keymap.set('n', '<leader>fm', ':Mason<CR>', { desc = "Mason menu" })
 vim.keymap.set('n', '<leader>fl', ':Lazy<CR>', { desc = "Lazy menu" })
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>', { desc = "Telescope" })
-
-
+        
+       
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Documentation" })
-
+   
 vim.keymap.set('n', '<leader>cf', vim.lsp.buf.format, { desc = "Format Code" })
 vim.keymap.set("n", "<leader>cd", vim.lsp.buf.definition, { desc = "Go to Definition" })
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.references, { desc = "References" })
